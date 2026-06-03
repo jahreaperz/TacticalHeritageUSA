@@ -1,0 +1,54 @@
+/*
+==================================================
+Tactical Heritage
+responsive.css
+
+Version: 1.0
+Purpose: Responsive Styles
+==================================================
+*/
+
+@media(max-width:1024px){
+
+.hero h1{
+    font-size:4rem;
+}
+
+}
+
+@media(max-width:768px){
+
+.nav-menu{
+    display:none;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.section-title{
+    font-size:2.2rem;
+}
+
+.section{
+    padding:75px 0;
+}
+
+}
+
+@media(max-width:480px){
+
+.hero h1{
+    font-size:2.4rem;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.btn{
+    width:100%;
+    text-align:center;
+}
+
+}

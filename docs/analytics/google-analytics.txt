@@ -1,0 +1,16 @@
+Google Analytics 4
+
+Property:
+tacticalheritage.com
+
+Stream:
+Tactical Heritage Website
+
+Measurement ID:
+G-DBZ70RCPR1
+
+Stream ID:
+14992587117
+
+Status:
+Ready for Website Integration

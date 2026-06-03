@@ -1,0 +1,272 @@
+/*
+==================================================
+Tactical Heritage
+components.css
+
+Version: 4.0
+Purpose: Premium Components & Heritage Redesign
+==================================================
+*/
+
+/* HEADER */
+
+.site-header{
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+.header-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 0;
+}
+
+.logo{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    text-decoration:none;
+    line-height:1;
+}
+
+.logo-mark{
+    font-size:1.8rem;
+    font-weight:800;
+    color:#ffffff;
+    margin-bottom:6px;
+}
+
+.logo-text{
+    font-size:.55rem;
+    letter-spacing:3px;
+    color:var(--gold);
+}
+.nav-menu{
+    display:flex;
+    gap:2rem;
+}
+
+.nav-menu a{
+    font-weight:500;
+    transition:var(--transition);
+}
+
+.nav-menu a:hover{
+    color:var(--gold);
+}
+
+/* BUTTONS */
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:4px;
+    font-weight:600;
+    transition:var(--transition);
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:#000;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    border:1px solid var(--gold);
+    color:var(--gold);
+}
+
+.btn-outline:hover{
+    background:var(--gold);
+    color:#000;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.75)
+        ),
+        url('../assets/images/hero/hero-homepage-desktop.webp');
+
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:720px;
+    padding-top:90px;
+}
+
+.hero h1{
+    font-size:4.25rem;
+    line-height:1.05;
+    margin-bottom:1.5rem;
+    text-transform:uppercase;
+}
+
+.hero p{
+    max-width:650px;
+    margin-bottom:2rem;
+    color:var(--white);
+}
+
+.hero-buttons{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+}
+/* FOUNDATION GRID */
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+/* CARDS */
+
+.card{
+    background:var(--bg-secondary);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    overflow:hidden;
+    transition:.35s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:var(--gold);
+}
+
+.card-content{
+    padding:28px;
+}
+
+.card h3{
+    margin-bottom:1rem;
+    color:var(--gold);
+}
+
+.card p{
+    color:var(--text-muted);
+}
+
+.card-image{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:transform .5s ease;
+}
+
+.card:hover .card-image{
+    transform:scale(1.05);
+}
+
+/* HERITAGE REDESIGN */
+
+.heritage-story{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+    margin-bottom:120px;
+}
+
+.heritage-story:last-child{
+    margin-bottom:0;
+}
+
+.heritage-story.reverse .heritage-image{
+    order:2;
+}
+
+.heritage-story.reverse .heritage-content{
+    order:1;
+}
+
+.heritage-image img{
+    width:100%;
+    border-radius:14px;
+    display:block;
+}
+
+.heritage-content h3{
+    color:var(--gold);
+    font-size:2rem;
+    margin-bottom:1rem;
+    text-transform:uppercase;
+}
+
+.heritage-content p{
+    color:var(--text-muted);
+    margin-bottom:2rem;
+    max-width:600px;
+}
+
+/* COLLECTION */
+
+.collection-banner{
+    border-radius:14px;
+    overflow:hidden;
+    margin-bottom:25px;
+}
+
+.collection-banner img{
+    width:100%;
+    display:block;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+    background:var(--bg-secondary);
+    padding:45px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.newsletter-form{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.newsletter-form input{
+    flex:1;
+    min-width:250px;
+    padding:16px;
+    border:none;
+    border-radius:4px;
+    font-size:1rem;
+}
+
+.newsletter-form button{
+    border:none;
+    cursor:pointer;
+}
+
+/* FOOTER */
+
+.site-footer{
+    border-top:1px solid rgba(255,255,255,.08);
+    text-align:center;
+    padding:50px 0;
+}
+
+.site-footer p{
+    margin-bottom:8px;
+}

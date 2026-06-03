@@ -1,0 +1,13 @@
+Google Search Console
+
+Domain:
+tacticalheritage.com
+
+Status:
+Verified
+
+Method:
+DNS TXT Record
+
+Verified:
+2026-06-02
